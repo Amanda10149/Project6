@@ -1,39 +1,39 @@
-2018-04-23 16:11:06,549 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
-2018-04-23 16:11:07,211 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-04-23 16:11:08,207 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-5 - Bean [models.Question] has no unique id set
-2018-04-23 16:11:09,250 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-5 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-04-23 16:11:09,573 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-5 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2018-04-23 16:54:14,355 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-2 - Creating Pool for datasource 'default'
+2018-04-23 16:54:14,918 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-2 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-04-23 16:54:15,840 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-2 - Bean [models.Question] has no unique id set
+2018-04-23 16:54:16,720 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-2 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-04-23 16:54:17,170 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-2 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2018-04-23 16:11:09,592 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-5 - Application started (Dev)
-2018-04-23 16:11:10,036 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-5 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
-2018-04-23 16:11:10,043 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-5 - The JWT signature in the cookie does not match the locally computed signature with the server.
+2018-04-23 16:54:17,207 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-2 - Application started (Dev)
+2018-04-23 16:54:17,666 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-2 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-23 16:54:17,670 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in play-dev-mode-akka.actor.default-dispatcher-2 - The JWT signature in the cookie does not match the locally computed signature with the server.
 This usually indicates the browser has a leftover cookie from another Play application,
 so clearing cookies may resolve this error message.
-2018-04-23 16:22:01,949 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-50 - Shutting down connection pool.
-2018-04-23 16:22:02,316 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-50 - Creating Pool for datasource 'default'
-2018-04-23 16:22:02,344 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-50 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-04-23 16:22:02,439 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-50 - Bean [models.Question] has no unique id set
-2018-04-23 16:22:02,635 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-50 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-04-23 16:22:02,792 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-50 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2018-04-23 16:55:23,646 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-12 - Shutting down connection pool.
+2018-04-23 16:55:24,093 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-12 - Creating Pool for datasource 'default'
+2018-04-23 16:55:24,126 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-12 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-04-23 16:55:24,213 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-12 - Bean [models.Question] has no unique id set
+2018-04-23 16:55:24,429 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-12 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-04-23 16:55:24,539 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-12 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2018-04-23 16:22:02,802 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-50 - Application started (Dev)
-2018-04-23 16:26:00,469 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-76 - Shutting down connection pool.
-2018-04-23 16:26:00,970 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-76 - Creating Pool for datasource 'default'
-2018-04-23 16:26:01,011 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-76 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-04-23 16:26:01,076 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-76 - Bean [models.Question] has no unique id set
-2018-04-23 16:26:01,215 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-76 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-04-23 16:26:01,327 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-76 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2018-04-23 16:55:24,555 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-12 - Application started (Dev)
+2018-04-23 16:56:40,719 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2018-04-23 16:56:41,130 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
+2018-04-23 16:56:41,185 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-10 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-04-23 16:56:41,272 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-10 - Bean [models.Question] has no unique id set
+2018-04-23 16:56:41,426 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-10 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-04-23 16:56:41,605 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2018-04-23 16:26:01,328 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-76 - Application started (Dev)
+2018-04-23 16:56:41,633 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev)

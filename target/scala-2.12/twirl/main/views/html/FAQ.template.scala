@@ -74,7 +74,7 @@ Seq[Any](format.raw/*1.65*/("""
         
        
                 """),format.raw/*44.17*/("""<div class="actions">
-                        <input type="submit" value="Submit \Question" class="btn btn-primary">
+                        <input type="submit" value="Submit Question" class="btn btn-primary">
                         <a href=""""),_display_(/*46.35*/routes/*46.41*/.HomeController.FAQ),format.raw/*46.60*/("""">
                             <button type="button" class="btn btn-warning"> Cancel </button>
                         
@@ -82,10 +82,33 @@ Seq[Any](format.raw/*1.65*/("""
                 </div>
             """)))}),format.raw/*51.14*/("""   
         
-          
-					
-				
-							"""),format.raw/*56.8*/("""<div>
+  """),format.raw/*53.3*/("""<style>        
+            .accordion """),format.raw/*54.24*/("""{"""),format.raw/*54.25*/("""
+              """),format.raw/*55.15*/("""background-color: #eee;
+              color: #444;
+              cursor: pointer;
+              padding: 18px;
+              width: 80%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            """),format.raw/*65.13*/("""}"""),format.raw/*65.14*/("""
+            
+            """),format.raw/*67.13*/(""".active, .accordion:hover """),format.raw/*67.39*/("""{"""),format.raw/*67.40*/("""
+              """),format.raw/*68.15*/("""background-color: #ccc;
+            """),format.raw/*69.13*/("""}"""),format.raw/*69.14*/("""
+            
+            """),format.raw/*71.13*/(""".panel """),format.raw/*71.20*/("""{"""),format.raw/*71.21*/("""
+              """),format.raw/*72.15*/("""padding: 0 18px;
+              background-color: white;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+            """),format.raw/*77.13*/("""}"""),format.raw/*77.14*/("""				
+				"""),format.raw/*78.5*/("""</style>
+							<div>
 
     </head>
     <body>
@@ -115,18 +138,18 @@ Seq[Any](format.raw/*1.65*/("""
     var acc = document.getElementsByClassName("accordion");
     var i;
     
-    for (i = 0; i < acc.length; i++) """),format.raw/*86.38*/("""{"""),format.raw/*86.39*/("""
-      """),format.raw/*87.7*/("""acc[i].addEventListener("click", function() """),format.raw/*87.51*/("""{"""),format.raw/*87.52*/("""
-        """),format.raw/*88.9*/("""this.classList.toggle("active");
+    for (i = 0; i < acc.length; i++) """),format.raw/*109.38*/("""{"""),format.raw/*109.39*/("""
+      """),format.raw/*110.7*/("""acc[i].addEventListener("click", function() """),format.raw/*110.51*/("""{"""),format.raw/*110.52*/("""
+        """),format.raw/*111.9*/("""this.classList.toggle("active");
         var panel = this.nextElementSibling;
-        if (panel.style.maxHeight)"""),format.raw/*90.35*/("""{"""),format.raw/*90.36*/("""
-          """),format.raw/*91.11*/("""panel.style.maxHeight = null;
-        """),format.raw/*92.9*/("""}"""),format.raw/*92.10*/(""" """),format.raw/*92.11*/("""else """),format.raw/*92.16*/("""{"""),format.raw/*92.17*/("""
-          """),format.raw/*93.11*/("""panel.style.maxHeight = panel.scrollHeight + "px";
-        """),format.raw/*94.9*/("""}"""),format.raw/*94.10*/(""" 
-      """),format.raw/*95.7*/("""}"""),format.raw/*95.8*/(""");
-    """),format.raw/*96.5*/("""}"""),format.raw/*96.6*/("""
-    """),format.raw/*97.5*/("""</script>
+        if (panel.style.maxHeight)"""),format.raw/*113.35*/("""{"""),format.raw/*113.36*/("""
+          """),format.raw/*114.11*/("""panel.style.maxHeight = null;
+        """),format.raw/*115.9*/("""}"""),format.raw/*115.10*/(""" """),format.raw/*115.11*/("""else """),format.raw/*115.16*/("""{"""),format.raw/*115.17*/("""
+          """),format.raw/*116.11*/("""panel.style.maxHeight = panel.scrollHeight + "px";
+        """),format.raw/*117.9*/("""}"""),format.raw/*117.10*/(""" 
+      """),format.raw/*118.7*/("""}"""),format.raw/*118.8*/(""");
+    """),format.raw/*119.5*/("""}"""),format.raw/*119.6*/("""
+    """),format.raw/*120.5*/("""</script>
 
 
 
@@ -144,8 +167,8 @@ Seq[Any](format.raw/*1.65*/("""
 		<img src="/assets/images/follow.png" usemap="#facebook" alt"wh"width="570" height="200"/>
 			</main>
 
-    """)))}),format.raw/*115.6*/("""
-			"""),format.raw/*116.4*/("""<footer>
+    """)))}),format.raw/*138.6*/("""
+			"""),format.raw/*139.4*/("""<footer>
 				Copyright &copy; 2018
 			</footer>
 		</div>
@@ -166,11 +189,11 @@ Seq[Any](format.raw/*1.65*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 23 16:25:51 IST 2018
+                  DATE: Mon Apr 23 16:56:32 IST 2018
                   SOURCE: /home/wdd/webapps/finalFinalroject/app/views/FAQ.scala.html
-                  HASH: 9cfd77ccef837e926a92e287a98f52378841cc57
-                  MATRIX: 979->1|1115->66|1160->64|1187->83|1214->84|1308->153|1335->172|1374->174|1405->178|2054->800|2164->900|2204->901|2249->946|2295->1053|2340->1071|2353->1075|2384->1085|2447->1121|2544->1197|2589->1215|2688->1293|2733->1311|2839->1395|2942->1470|3120->1621|3135->1627|3175->1646|3391->1831|3460->1873|4858->3243|4887->3244|4921->3251|4993->3295|5022->3296|5058->3305|5198->3417|5227->3418|5266->3429|5331->3467|5360->3468|5389->3469|5422->3474|5451->3475|5490->3486|5576->3545|5605->3546|5640->3554|5668->3555|5702->3562|5730->3563|5762->3568|6329->4104|6361->4108
-                  LINES: 28->1|31->2|34->1|35->3|36->4|41->9|41->9|41->9|42->10|62->30|62->30|62->30|63->31|64->32|65->33|65->33|65->33|68->36|68->36|69->37|69->37|70->38|70->38|76->44|78->46|78->46|78->46|83->51|88->56|118->86|118->86|119->87|119->87|119->87|120->88|122->90|122->90|123->91|124->92|124->92|124->92|124->92|124->92|125->93|126->94|126->94|127->95|127->95|128->96|128->96|129->97|147->115|148->116
+                  HASH: 2c5ac89d53ad7f3942b34d0f4b95439115bf3ff1
+                  MATRIX: 979->1|1115->66|1160->64|1187->83|1214->84|1308->153|1335->172|1374->174|1405->178|2054->800|2164->900|2204->901|2249->946|2295->1053|2340->1071|2353->1075|2384->1085|2447->1121|2544->1197|2589->1215|2688->1293|2733->1311|2839->1395|2942->1470|3119->1620|3134->1626|3174->1645|3390->1830|3432->1845|3499->1884|3528->1885|3571->1900|3900->2201|3929->2202|3983->2228|4037->2254|4066->2255|4109->2270|4173->2306|4202->2307|4256->2333|4291->2340|4320->2341|4363->2356|4572->2537|4601->2538|4637->2547|6052->3933|6082->3934|6117->3941|6190->3985|6220->3986|6257->3995|6398->4107|6428->4108|6468->4119|6534->4157|6564->4158|6594->4159|6628->4164|6658->4165|6698->4176|6785->4235|6815->4236|6851->4244|6880->4245|6915->4252|6944->4253|6977->4258|7544->4794|7576->4798
+                  LINES: 28->1|31->2|34->1|35->3|36->4|41->9|41->9|41->9|42->10|62->30|62->30|62->30|63->31|64->32|65->33|65->33|65->33|68->36|68->36|69->37|69->37|70->38|70->38|76->44|78->46|78->46|78->46|83->51|85->53|86->54|86->54|87->55|97->65|97->65|99->67|99->67|99->67|100->68|101->69|101->69|103->71|103->71|103->71|104->72|109->77|109->77|110->78|141->109|141->109|142->110|142->110|142->110|143->111|145->113|145->113|146->114|147->115|147->115|147->115|147->115|147->115|148->116|149->117|149->117|150->118|150->118|151->119|151->119|152->120|170->138|171->139
                   -- GENERATED --
               */
           
