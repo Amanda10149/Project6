@@ -62,3 +62,4 @@ git push -u https://github.com/Amanda10149/Project5 master
 git config --global push.default current
 git push 
 run
+compile

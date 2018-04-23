@@ -20,7 +20,7 @@
           <ul>	
             <li>@p.getDescription</li><br>
             <li>@p.getStock</li><br>
-            <li>@p.getPrice</li><br>
+            <li>euro; @("%.2f".format(p.getPrice))</li><br>
             <td>
               <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
                 <span class="glyphicon glyphicon-trash"></span>
@@ -41,7 +41,7 @@
         <ul>	
           <li>@p.getDescription  </li><br>
           <li>@p.getStock</li><br>
-          <li>@p.getPrice</li><br>
+          <li>euro; @("%.2f".format(p.getPrice))</li><br>
           <td>
             <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
@@ -64,7 +64,7 @@
           <li>@p.getDescription</li><br>
         
           <li>@p.getStock</li><br>
-          <li>@p.getPrice</li><br>
+          <li>euro; @("%.2f".format(p.getPrice))</li><br>
           <td>
             <a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
