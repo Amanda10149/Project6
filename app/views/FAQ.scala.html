@@ -12,17 +12,20 @@
 					<div id="leftCol">
 						<div class="outerColDiv">
 							<div class="col-sm-5">
-      <p>If you're question isint answered in the FAQ you can submit your own question here and one of our staff will respond within 24 hours. </p>
+      <p>If you're question is not answered in the FAQ you can submit your own question here and one of our staff will respond within 24 hours. </p>
 	  
       <p><span class="glyphicon glyphicon-map-marker"></span> Sandyford, Dublin</p>
       <p><span class="glyphicon glyphicon-phone"></span> 01 820876</p>
       
     </div>
 						</div>
-					
-          </div>
-          @main("Add Question", user) {
-            <p class="lead">Ask a question</p>
+					</div>
+          
+          
+          <div id="centreCol">
+             
+              <div>   
+        <p class="lead">Ask a question</p>
         
             @form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form"){
                 @* CSRF attack prevention *@
@@ -37,67 +40,43 @@
         
                
         
-        
+       
                 <div class="actions">
-                        <input type="submit" value="AddQuestion" class="btn btn-primary">
+                        <input type="submit" value="Submit Question" class="btn btn-primary">
                         <a href="@routes.HomeController.FAQ">
                             <button type="button" class="btn btn-warning"> Cancel </button>
                         
                         </a>
                 </div>
             }   
-        }
+        
           
 					
-					<div id="centreCol">
-						<div class="outerColDiv">
+				
 							<div>
-<!-- Accordain -->
-<style>
-    .accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-    }
-    
-    .active, .accordion:hover {
-        background-color: #ccc;
-    }
-    
-    .panel {
-        padding: 0 18px;
-        background-color: white;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-    </style>
+
     </head>
     <body>
     
-    <h2>Animated Accordion</h2>
+    <h2>Frequently Asked Questions</h2>
     <p>Click on the buttons to open the collapsible content.</p>
     
-    <button class="accordion">Section 1</button>
+    <button class="accordion">Do you ship internationally? </button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Yes, we do ship internationally. We only ask that you pay for shipping or any taxes that your package incurs through customs.</p>
     </div>
     
-    <button class="accordion">Section 2</button>
+    <button class="accordion">Is it possible to purchase an extended warrenty?</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>You may upgrade the warranty within the first thirty days of purchase</p>
     </div>
     
-    <button class="accordion">Section 3</button>
+    <button class="accordion">I have no video signal, what should I do?</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <ul>
+        <li>Check all cable connections from your monitor to your system make sure they are not loose and properly connected.</li>
+          <li>Confirm that you are not connecting the monitor to the onboard video output and are connecting the monitor to the video card.</li>
+          <li>On the monitor make sure to change between the input sources, most monitors will have the feature for selecting the input that the monitor is receiving a signal from. Make sure you have selected the proper input.</li>
     </div>
     
     <script>

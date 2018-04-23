@@ -44,110 +44,89 @@ Seq[Any](format.raw/*1.65*/("""
 					<div id="leftCol">
 						<div class="outerColDiv">
 							<div class="col-sm-5">
-      <p>If you're question isint answered in the FAQ you can submit your own question here and one of our staff will respond within 24 hours. </p>
+      <p>If you're question is not answered in the FAQ you can submit your own question here and one of our staff will respond within 24 hours. </p>
 	  
       <p><span class="glyphicon glyphicon-map-marker"></span> Sandyford, Dublin</p>
       <p><span class="glyphicon glyphicon-phone"></span> 01 820876</p>
       
     </div>
 						</div>
-					
-          </div>
-          """),_display_(/*24.12*/main("Add Question", user)/*24.38*/ {_display_(Seq[Any](format.raw/*24.40*/("""
-            """),format.raw/*25.13*/("""<p class="lead">Ask a question</p>
+					</div>
+          
+          
+          <div id="centreCol">
+             
+              <div>   
+        <p class="lead">Ask a question</p>
         
-            """),_display_(/*27.14*/form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form")/*27.114*/{_display_(Seq[Any](format.raw/*27.115*/("""
-                """),format.raw/*28.45*/("""
-                """),format.raw/*29.107*/("""
-                """),_display_(/*30.18*/CSRF/*30.22*/.formField),format.raw/*30.32*/("""
+            """),_display_(/*30.14*/form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form")/*30.114*/{_display_(Seq[Any](format.raw/*30.115*/("""
+                """),format.raw/*31.45*/("""
+                """),format.raw/*32.107*/("""
+                """),_display_(/*33.18*/CSRF/*33.22*/.formField),format.raw/*33.32*/("""
         
         
-                """),_display_(/*33.18*/inputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*33.94*/("""
-                """),_display_(/*34.18*/inputText(QuestionForm("email"), '_label -> "Email", 'class -> "form-control")),format.raw/*34.96*/("""
-                """),_display_(/*35.18*/inputText(QuestionForm("question"), '_label -> "Question", 'class -> "form-control")),format.raw/*35.102*/("""
+                """),_display_(/*36.18*/inputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")),format.raw/*36.94*/("""
+                """),_display_(/*37.18*/inputText(QuestionForm("email"), '_label -> "Email", 'class -> "form-control")),format.raw/*37.96*/("""
+                """),_display_(/*38.18*/inputText(QuestionForm("question"), '_label -> "Question", 'class -> "form-control")),format.raw/*38.102*/("""
                
         
                
         
-        
-                """),format.raw/*41.17*/("""<div class="actions">
+       
+                """),format.raw/*44.17*/("""<div class="actions">
                         <input type="submit" value="AddQuestion" class="btn btn-primary">
-                        <a href=""""),_display_(/*43.35*/routes/*43.41*/.HomeController.FAQ),format.raw/*43.60*/("""">
+                        <a href=""""),_display_(/*46.35*/routes/*46.41*/.HomeController.FAQ),format.raw/*46.60*/("""">
                             <button type="button" class="btn btn-warning"> Cancel </button>
                         
                         </a>
                 </div>
-            """)))}),format.raw/*48.14*/("""   
-        """)))}),format.raw/*49.10*/("""
+            """)))}),format.raw/*51.14*/("""   
+        
           
 					
-					"""),format.raw/*52.6*/("""<div id="centreCol">
-						<div class="outerColDiv">
-							<div>
-<!-- Accordain -->
-<style>
-    .accordion """),format.raw/*57.16*/("""{"""),format.raw/*57.17*/("""
-        """),format.raw/*58.9*/("""background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        transition: 0.4s;
-    """),format.raw/*68.5*/("""}"""),format.raw/*68.6*/("""
-    
-    """),format.raw/*70.5*/(""".active, .accordion:hover """),format.raw/*70.31*/("""{"""),format.raw/*70.32*/("""
-        """),format.raw/*71.9*/("""background-color: #ccc;
-    """),format.raw/*72.5*/("""}"""),format.raw/*72.6*/("""
-    
-    """),format.raw/*74.5*/(""".panel """),format.raw/*74.12*/("""{"""),format.raw/*74.13*/("""
-        """),format.raw/*75.9*/("""padding: 0 18px;
-        background-color: white;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    """),format.raw/*80.5*/("""}"""),format.raw/*80.6*/("""
-    """),format.raw/*81.5*/("""</style>
+				
+							"""),format.raw/*56.8*/("""<div>
+
     </head>
     <body>
     
-    <h2>Animated Accordion</h2>
+    <h2>Frequently Asked Questions</h2>
     <p>Click on the buttons to open the collapsible content.</p>
     
-    <button class="accordion">Section 1</button>
+    <button class="accordion">Do you ship internationally? </button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Yes, we do ship internationally. We only ask that you pay for shipping or any taxes that your package incurs through customs.</p>
     </div>
     
-    <button class="accordion">Section 2</button>
+    <button class="accordion">Is it possible to purchase an extended warrenty?</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>You may upgrade the warranty within the first thirty days of purchase</p>
     </div>
     
-    <button class="accordion">Section 3</button>
+    <button class="accordion">I have no video signal, what should I do?</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <ul>
+        <li>Check all cable connections from your monitor to your system make sure they are not loose and properly connected.</li>
+          <li>Confirm that you are not connecting the monitor to the onboard video output and are connecting the monitor to the video card.</li>
+          <li>On the monitor make sure to change between the input sources, most monitors will have the feature for selecting the input that the monitor is receiving a signal from. Make sure you have selected the proper input.</li>
     </div>
     
     <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
     
-    for (i = 0; i < acc.length; i++) """),format.raw/*107.38*/("""{"""),format.raw/*107.39*/("""
-      """),format.raw/*108.7*/("""acc[i].addEventListener("click", function() """),format.raw/*108.51*/("""{"""),format.raw/*108.52*/("""
-        """),format.raw/*109.9*/("""this.classList.toggle("active");
+    for (i = 0; i < acc.length; i++) """),format.raw/*86.38*/("""{"""),format.raw/*86.39*/("""
+      """),format.raw/*87.7*/("""acc[i].addEventListener("click", function() """),format.raw/*87.51*/("""{"""),format.raw/*87.52*/("""
+        """),format.raw/*88.9*/("""this.classList.toggle("active");
         var panel = this.nextElementSibling;
-        if (panel.style.maxHeight)"""),format.raw/*111.35*/("""{"""),format.raw/*111.36*/("""
-          """),format.raw/*112.11*/("""panel.style.maxHeight = null;
-        """),format.raw/*113.9*/("""}"""),format.raw/*113.10*/(""" """),format.raw/*113.11*/("""else """),format.raw/*113.16*/("""{"""),format.raw/*113.17*/("""
-          """),format.raw/*114.11*/("""panel.style.maxHeight = panel.scrollHeight + "px";
-        """),format.raw/*115.9*/("""}"""),format.raw/*115.10*/(""" 
-      """),format.raw/*116.7*/("""}"""),format.raw/*116.8*/(""");
-    """),format.raw/*117.5*/("""}"""),format.raw/*117.6*/("""
-    """),format.raw/*118.5*/("""</script>
+        if (panel.style.maxHeight)"""),format.raw/*90.35*/("""{"""),format.raw/*90.36*/("""
+          """),format.raw/*91.11*/("""panel.style.maxHeight = null;
+        """),format.raw/*92.9*/("""}"""),format.raw/*92.10*/(""" """),format.raw/*92.11*/("""else """),format.raw/*92.16*/("""{"""),format.raw/*92.17*/("""
+          """),format.raw/*93.11*/("""panel.style.maxHeight = panel.scrollHeight + "px";
+        """),format.raw/*94.9*/("""}"""),format.raw/*94.10*/(""" 
+      """),format.raw/*95.7*/("""}"""),format.raw/*95.8*/(""");
+    """),format.raw/*96.5*/("""}"""),format.raw/*96.6*/("""
+    """),format.raw/*97.5*/("""</script>
 
 
 
@@ -165,8 +144,8 @@ Seq[Any](format.raw/*1.65*/("""
 		<img src="/assets/images/follow.png" usemap="#facebook" alt"wh"width="570" height="200"/>
 			</main>
 
-    """)))}),format.raw/*136.6*/("""
-			"""),format.raw/*137.4*/("""<footer>
+    """)))}),format.raw/*115.6*/("""
+			"""),format.raw/*116.4*/("""<footer>
 				Copyright &copy; 2018
 			</footer>
 		</div>
@@ -187,11 +166,11 @@ Seq[Any](format.raw/*1.65*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 23 14:49:16 IST 2018
+                  DATE: Mon Apr 23 16:21:42 IST 2018
                   SOURCE: /home/wdd/webapps/finalFinalroject/app/views/FAQ.scala.html
-                  HASH: 46f6d8b23dcff2b770cafc95fad66edc337f0698
-                  MATRIX: 979->1|1115->66|1160->64|1187->83|1214->84|1308->153|1335->172|1374->174|1405->178|1920->666|1955->692|1995->694|2036->707|2120->764|2230->864|2270->865|2315->910|2361->1017|2406->1035|2419->1039|2450->1049|2513->1085|2610->1161|2655->1179|2754->1257|2799->1275|2905->1359|3009->1435|3182->1581|3197->1587|3237->1606|3453->1791|3497->1804|3547->1827|3683->1935|3712->1936|3748->1945|4015->2185|4043->2186|4080->2196|4134->2222|4163->2223|4199->2232|4254->2260|4282->2261|4319->2271|4354->2278|4383->2279|4419->2288|4595->2437|4623->2438|4655->2443|5954->3713|5984->3714|6019->3721|6092->3765|6122->3766|6159->3775|6300->3887|6330->3888|6370->3899|6436->3937|6466->3938|6496->3939|6530->3944|6560->3945|6600->3956|6687->4015|6717->4016|6753->4024|6782->4025|6817->4032|6846->4033|6879->4038|7446->4574|7478->4578
-                  LINES: 28->1|31->2|34->1|35->3|36->4|41->9|41->9|41->9|42->10|56->24|56->24|56->24|57->25|59->27|59->27|59->27|60->28|61->29|62->30|62->30|62->30|65->33|65->33|66->34|66->34|67->35|67->35|73->41|75->43|75->43|75->43|80->48|81->49|84->52|89->57|89->57|90->58|100->68|100->68|102->70|102->70|102->70|103->71|104->72|104->72|106->74|106->74|106->74|107->75|112->80|112->80|113->81|139->107|139->107|140->108|140->108|140->108|141->109|143->111|143->111|144->112|145->113|145->113|145->113|145->113|145->113|146->114|147->115|147->115|148->116|148->116|149->117|149->117|150->118|168->136|169->137
+                  HASH: d620b3977f166d8a78b02c55a193646e278d814b
+                  MATRIX: 979->1|1115->66|1160->64|1187->83|1214->84|1308->153|1335->172|1374->174|1405->178|2054->800|2164->900|2204->901|2249->946|2295->1053|2340->1071|2353->1075|2384->1085|2447->1121|2544->1197|2589->1215|2688->1293|2733->1311|2839->1395|2942->1470|3115->1616|3130->1622|3170->1641|3386->1826|3455->1868|4853->3238|4882->3239|4916->3246|4988->3290|5017->3291|5053->3300|5193->3412|5222->3413|5261->3424|5326->3462|5355->3463|5384->3464|5417->3469|5446->3470|5485->3481|5571->3540|5600->3541|5635->3549|5663->3550|5697->3557|5725->3558|5757->3563|6324->4099|6356->4103
+                  LINES: 28->1|31->2|34->1|35->3|36->4|41->9|41->9|41->9|42->10|62->30|62->30|62->30|63->31|64->32|65->33|65->33|65->33|68->36|68->36|69->37|69->37|70->38|70->38|76->44|78->46|78->46|78->46|83->51|88->56|118->86|118->86|119->87|119->87|119->87|120->88|122->90|122->90|123->91|124->92|124->92|124->92|124->92|124->92|125->93|126->94|126->94|127->95|127->95|128->96|128->96|129->97|147->115|148->116
                   -- GENERATED --
               */
           

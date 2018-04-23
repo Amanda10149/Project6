@@ -68,3 +68,10 @@ compile
 compie
 compile
 run
+clean
+compile
+run
+compile
+run
+h2-browser
+run

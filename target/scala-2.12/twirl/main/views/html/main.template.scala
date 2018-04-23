@@ -123,7 +123,7 @@ Seq[Any](format.raw/*2.57*/("""
                     """),format.raw/*92.21*/("""</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/Login"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                  <li><a href="/login"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
                   <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
                 </ul>
               </div>
@@ -166,9 +166,9 @@ Seq[Any](format.raw/*2.57*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 23 14:01:52 IST 2018
+                  DATE: Mon Apr 23 15:35:51 IST 2018
                   SOURCE: /home/wdd/webapps/finalFinalroject/app/views/main.scala.html
-                  HASH: 5c74fc71b16c958468b18b451df8355405faf39a
+                  HASH: a03ad64976160e7da0279e90efaa5b4994b4708d
                   MATRIX: 970->2|1120->57|1148->59|1265->149|1291->154|1402->238|1417->244|1483->289|4762->3541|4789->3559|4828->3560|4874->3575|4928->3602|4953->3618|4993->3620|5050->3649|5087->3659|5102->3665|5148->3690|5185->3700|5198->3704|5229->3714|5278->3745|5291->3750|5330->3751|5387->3780|5424->3790|5439->3796|5484->3820|5552->3857|5601->3878|6112->4362|6140->4369|6170->4371
                   LINES: 28->2|33->2|35->4|43->12|43->12|46->15|46->15|46->15|117->86|117->86|117->86|117->86|118->87|118->87|118->87|119->88|119->88|119->88|119->88|119->88|119->88|119->88|120->89|120->89|120->89|121->90|121->90|121->90|121->90|122->91|123->92|143->112|143->112|145->114
                   -- GENERATED --
