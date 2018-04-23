@@ -25,3 +25,15 @@ so clearing cookies may resolve this error message.
     play.filters.hosts.AllowedHostsFilter
 
 2018-04-23 16:22:02,802 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-50 - Application started (Dev)
+2018-04-23 16:26:00,469 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-76 - Shutting down connection pool.
+2018-04-23 16:26:00,970 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-76 - Creating Pool for datasource 'default'
+2018-04-23 16:26:01,011 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-76 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-04-23 16:26:01,076 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-76 - Bean [models.Question] has no unique id set
+2018-04-23 16:26:01,215 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-76 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-04-23 16:26:01,327 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-76 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-04-23 16:26:01,328 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-76 - Application started (Dev)
