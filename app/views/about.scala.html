@@ -1,0 +1,70 @@
+@(user: models.users.User)
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Computer Hub</title>
+		@main("Login", user) {
+			
+			<main>
+	<div id="columns">
+	<div id="leftCol">
+	<div class="outerColDiv">
+	<div>
+	<!-- CONTENT GOES HERE -->
+	<h4>Contact Information</h4>
+	<ul>
+	<li>Ph: 01 298 1234</li><br>
+	<li>Fax: 01 298 9876</li><br>
+	
+	<li>
+	Post: 
+	<ul>	
+	<li>Computer Hub,</li><br>
+	<li>Block 2B</li><br>
+	<li>Sandyford Business Park,</li><br>
+	<li>Sandyford,</li><br>
+	<li>Dublin 18.</li>
+	</ul>	
+	</li>
+	<li></li>
+	</ul>
+	</div>
+	</div>
+	
+	</div>
+	
+	<div id="centreCol">
+	<div class="outerColDiv">
+	<div>
+	<!-- CONTENT GOES HERE -->
+	<h3>About Us</h3>
+	<p>We were founded in 2005.</p>
+	<br>
+	<h4>Our goals</h4>
+	<p>We strive to provide great quality products made from the best materials. We wish to provide fast shipping. </p>
+	
+	<h4>Money-back guarantee</h4>	
+	<p>We offer a 14-day cooling off period. So if you're not completely satisfied with your order, you can send it back to us, no questions asked!</p>
+	<h4>Real-time order tracking</h4>	
+	<p>Sign in to your account to track the status of your order in real time.<br> You will also receive emails at each step of the delivery process, from picking & packing to shipping.</p>
+	</div>
+	</div>
+	</div>
+	</div>
+	<map name="facebook" id="facebook">
+	<area href="https://www.facebook.com/" shape="circle" coords="100, 80,80,50" alt="fb"/>
+	<area href="https://twitter.com/" shape="circle" coords="300, 80,80,80" alt="tw"/>
+	<area href="https://www.instagram.com/" shape="circle" coords="500, 80,80,50" alt="in"/>
+	</map>
+	<img src="/assets/images/follow.png" usemap="#facebook" alt"wh"width="570" height="200"/>
+	</main>
+}
+	<footer>
+	Copyright &copy; 
+	</footer>
+	</div>
+	</body>
+</html>

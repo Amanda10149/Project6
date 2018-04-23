@@ -1,0 +1,44 @@
+@(loginForm: Form[models.users.Login], user: models.users.User)
+@import helper._
+
+@* Pass page title and content {html between braces} to the main view *@
+    @main("Login", user) {
+       
+        <!--HTML content for the index view -->
+        <div class="col-xs-4">
+            <h3>Sign in</h3>
+            <!-- Display login errors if they exist -->
+            @if(loginForm.hasGlobalErrors) {
+                <p class="alert alert-warning">
+                    @loginForm.globalError.message
+                </p>
+            }
+            @if(flash.containsKey("error")) {
+                <p class="alert alert-warning">
+                    @flash.get("loginRequired")
+                </p>
+             }
+    <!-- The login form -->
+            @helper.form(action = controllers.routes.LoginController.loginSubmit()) {
+             @* CSRF attack prevention *@
+             @*This token, send by the controller, will be used to authenticate the form submission *@
+             @CSRF.formField
+
+             <div class-"form-group">
+                @inputText(loginForm("email"), '_label -> "",
+                'class -> "form-control input-xs", 'placeholder -> "Email")
+            </div>
+            <div class-"form-group">
+                @inputPassword(loginForm("password"), '_label -> "",
+                'class -> "form-control input-xs", 'placeholder -> "Password")
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign In" class="btn btn-primary">
+            </div>
+        } @* End of form*@
+        </div>
+        <!-- End of content for main -->
+}
+
+
+

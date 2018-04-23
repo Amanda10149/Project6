@@ -1,0 +1,111 @@
+@(QuestionForm : Form[models.Question], user: models.users.User)
+@import helper._ 
+
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>CA2</title>
+    @main("Login", user) {
+			<main>
+				<div id="columns">
+					<div id="leftCol">
+						<div class="outerColDiv">
+							<div class="col-sm-5">
+      <p>If you're question isint answered in the FAQ you can submit your own question here and one of our staff will respond within 24 hours. </p>
+	  
+      <p><span class="glyphicon glyphicon-map-marker"></span> Sandyford, Dublin</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 01 820876</p>
+      
+    </div>
+						</div>
+					
+          </div>
+          @main("Add Question", user) {
+            <p class="lead">Ask a question</p>
+        
+            @form(action=routes.HomeController.addQuestionSubmit(), 'class -> "form-horizontal", 'role -> "form"){
+                @* CSRF attack prevention *@
+                @* This token, send by the controller, will be used to authenticate the form bubmission *@
+                @CSRF.formField
+        
+        
+                @inputText(QuestionForm("name"), '_label -> "Name", 'class -> "form-control")
+                @inputText(QuestionForm("email"), '_label -> "Email", 'class -> "form-control")
+                @inputText(QuestionForm("question"), '_label -> "Question", 'class -> "form-control")
+               
+        
+               
+        
+        
+                <div class="actions">
+                        <input type="submit" value="AddQuestion" class="btn btn-primary">
+                        <a href="@routes.HomeController.FAQ">
+                            <button type="button" class="btn btn-warning"> Cancel </button>
+                        
+                        </a>
+                </div>
+            }   
+        }
+          
+					
+					<div id="centreCol">
+						<div class="outerColDiv">
+							<div>
+<!-- Accordain -->
+<button class="accordion">Q1</button>
+<div class="panel">
+  <p>Question!!!!</p>
+</div>
+
+<button class="accordion">Q2</button>
+<div class="panel">
+  <p>Question!!!!</p>
+</div>
+
+</div><button class="accordion">Q3</button>
+<div class="panel">
+  <p>Question!!!!</p>
+</div>
+
+<!-- JS For Accordain-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+											<!-- Container (Contact Section) -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<map name="facebook" id="facebook">
+		<area href="https://www.facebook.com/" shape="circle" coords="100, 80,80,50" alt="fb"/>
+		<area href="https://twitter.com/" shape="circle" coords="300, 80,80,80" alt="tw"/>
+		<area href="https://www.instagram.com/" shape="circle" coords="500, 80,80,50" alt="in"/>
+		</map>
+		<img src="/assets/images/follow.png" usemap="#facebook" alt"wh"width="570" height="200"/>
+			</main>
+
+    }
+			<footer>
+				Copyright &copy; 2018
+			</footer>
+		</div>
+	</body>
+</html>

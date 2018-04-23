@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/Downloads/Project5-master/conf/evolutions,/home/wdd/Downloads/Project5-master/target/scala-2.12/classes/evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/Downloads/Project5-master/conf/application.conf,/home/wdd/Downloads/Project5-master/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/Downloads/Project5-master/conf/logback.xml,/home/wdd/Downloads/Project5-master/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/Downloads/Project5-master/conf/routes,/home/wdd/Downloads/Project5-master/target/scala-2.12/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/Downloads/Project5-master/conf/evolutions/default,/home/wdd/Downloads/Project5-master/target/scala-2.12/classes/evolutions/default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/Downloads/Project5-master/conf/evolutions/default/2.sql,/home/wdd/Downloads/Project5-master/target/scala-2.12/classes/evolutions/default/2.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/wdd/Downloads/Project5-master/conf/evolutions/default/1.sql,/home/wdd/Downloads/Project5-master/target/scala-2.12/classes/evolutions/default/1.sql)[0m

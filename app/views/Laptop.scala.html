@@ -1,0 +1,97 @@
+@(products: List[models.Product], user: models.users.User)
+
+
+
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Computer Hub</title>
+	@main("Login", user) {
+
+
+	<main>
+		<div class="container">    
+			<div class="row">
+			  <div class="col-sm-4">
+				<div class="panel panel-primary">
+				  <div class="panel-heading">Dell</div>
+				  <div class="panel-body"><img src="/assets/images/dell-xps.jpg" alt="Alienware" class="productImg" style="height: 13em"></div>
+				  @for(p <-products) {
+					@if(p.getId == 1) {
+				  <h4>@p.getName</h4>
+				  <ul>	
+					<li>@p.getDescription</li><br>
+					<li>@p.getStock</li><br>
+					<li>@p.getPrice</li><br>
+					<td>
+						<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+							<span class="glyphicon glyphicon-trash"></span>
+						</a>
+					</td>
+					
+					  }
+				  </ul>
+					}
+				</div>
+			  </div>
+			  <div class="col-sm-4"> 
+				<div class="panel panel-danger">
+				  <div class="panel-heading">Alienware</div>
+				  <div class="panel-body"><img src="/assets/images/Alienware.png" alt="Alienware" class="productImg" style="height: 13em"></div>
+				  @for(p <-products) {
+					@if(p.getId == 7) {
+				  <h4>@p.getName</h4>
+				  <ul>	
+					<li>@p.getDescription</li><br>
+					<li>@p.getStock</li><br>
+					<li>@p.getPrice</li><br>
+					<td>
+						<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+							<span class="glyphicon glyphicon-trash"></span>
+						</a>
+					</td>
+					
+					  }
+				  </ul>
+					}
+				</div>
+			  </div>
+			  <div class="col-sm-4"> 
+				<div class="panel panel-success">
+				  <div class="panel-heading">Inspirion</div>
+				  <div class="panel-body"><img src="/assets/images/Inspiron.jpg" alt="Inspiron" class="productImg" style="height: 13em;"></div>
+				  @for(p <-products) {
+					@if(p.getId == 4) {
+				  <h4>@p.getName</h4>
+				  <ul>	
+					<li>@p.getDescription</li><br>
+					<li>@p.getStock</li><br>
+					<li>@p.getPrice</li><br>
+					<td>
+						<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
+							<span class="glyphicon glyphicon-trash"></span>
+						</a>
+					</td>
+				}
+					  }
+				  </ul>
+					}
+				</div>
+			  </div>
+			</div>
+			</div>
+			<p>
+				<a href="@routes.HomeController.addProduct()">
+					<button class="btn btn-primary">Add a product</button>
+				</a>
+			</p>
+					  </main>
+						  
+					  <footer>
+						  Copyright &copy; 2018
+					  </footer>
+				  </div>
+			  </body>
+		  </html>

@@ -1,0 +1,64 @@
+run
+exit
+run
+exit
+run
+sbt
+exit
+run
+sbt
+git add .
+run
+git add .
+cd
+exit
+run
+exit
+run
+exit
+run
+exit
+run
+exit
+run
+h2-browser
+run
+h2-browser
+run
+h2-browser
+run
+sbt
+run
+exit
+run
+clean
+compile
+clean
+compile
+clean
+compile
+clean
+compile
+clean
+compile
+run
+end
+exit
+run
+exit
+run
+exit
+run
+exit
+run
+exit
+run
+compile
+run
+h2-browser
+run
+git push -u master
+git push -u https://github.com/Amanda10149/Project5 master
+git config --global push.default current
+git push 
+run

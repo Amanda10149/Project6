@@ -1,0 +1,13 @@
+2018-04-23 13:06:59,975 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2018-04-23 13:07:00,406 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-04-23 13:07:00,743 [WARN] from io.ebeaninternal.server.deploy.BeanDescriptorManager in play-dev-mode-akka.actor.default-dispatcher-3 - Bean [models.Question] has no unique id set
+2018-04-23 13:07:01,813 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-3 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-04-23 13:07:02,040 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-04-23 13:07:02,048 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2018-04-23 13:08:45,426 [INFO] from play.core.server.AkkaHttpServer in pool-9-thread-1 - Stopping server...
+2018-04-23 13:08:45,473 [INFO] from application in pool-9-thread-1 - Shutting down connection pool.
