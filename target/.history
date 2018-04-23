@@ -63,3 +63,8 @@ git config --global push.default current
 git push 
 run
 compile
+h2-browser
+compile
+compie
+compile
+run

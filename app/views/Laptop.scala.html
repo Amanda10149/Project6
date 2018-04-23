@@ -26,6 +26,10 @@
 					<li>@p.getStock</li><br>
 					<li>euro; @("%.2f".format(p.getPrice))</li><br>
 					<td>
+						<a href="@routes.HomeController.updateProduct(p.getId)" class="button-xs btn-danger">
+							<span class="glyphicon glyphicon-pencil"></span>
+					</td>
+					<td>
 						<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
 							<span class="glyphicon glyphicon-trash"></span>
 						</a>
@@ -48,6 +52,10 @@
 					<li>@p.getStock</li><br>
 					<li>euro; @("%.2f".format(p.getPrice))</li><br>
 					<td>
+							<a href="@routes.HomeController.updateProduct(p.getId)" class="button-xs btn-danger">
+								<span class="glyphicon glyphicon-pencil"></span>
+						</td>
+					<td>
 						<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
 							<span class="glyphicon glyphicon-trash"></span>
 						</a>
@@ -69,6 +77,10 @@
 					<li>@p.getDescription</li><br>
 					<li>@p.getStock</li><br>
 					<li>euro; @("%.2f".format(p.getPrice))</li><br>
+					<td>
+							<a href="@routes.HomeController.updateProduct(p.getId)" class="button-xs btn-danger">
+								<span class="glyphicon glyphicon-pencil"></span>
+						</td>
 					<td>
 						<a href="@routes.HomeController.deleteProduct(p.getId)" class="button-xs btn-danger">
 							<span class="glyphicon glyphicon-trash"></span>

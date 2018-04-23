@@ -54,59 +54,71 @@ Seq[Any](format.raw/*1.59*/("""
           <li>"""),_display_(/*22.16*/p/*22.17*/.getStock),format.raw/*22.26*/("""</li><br>
           <li>euro; """),_display_(/*23.22*/("%.2f".format(p.getPrice))),format.raw/*23.49*/("""</li><br>
           <td>
-            <a href=""""),_display_(/*25.23*/routes/*25.29*/.HomeController.deleteProduct(p.getId)),format.raw/*25.67*/("""" class="button-xs btn-danger">
+							<a href=""""),_display_(/*25.18*/routes/*25.24*/.HomeController.updateProduct(p.getId)),format.raw/*25.62*/("""" class="button-xs btn-danger">
+								<span class="glyphicon glyphicon-pencil"></span>
+						</td>
+          <td>
+            <a href=""""),_display_(/*29.23*/routes/*29.29*/.HomeController.deleteProduct(p.getId)),format.raw/*29.67*/("""" class="button-xs btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
             </a>
           </td>
           
-            """)))}),format.raw/*30.14*/("""
-        """),format.raw/*31.9*/("""</ul>
-          """)))}),format.raw/*32.12*/("""
-      """),format.raw/*33.7*/("""</div>
+            """)))}),format.raw/*34.14*/("""
+        """),format.raw/*35.9*/("""</ul>
+          """)))}),format.raw/*36.12*/("""
+      """),format.raw/*37.7*/("""</div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-danger">
         <div class="panel-heading">Samsung 40 Inch Full HD TV</div>
         <div class="panel-body"><img src="/assets/images/SamsungTV-img2.jpg" alt="40' Samsung TV" class="productImg" style="height: 13em"></div>
-        """),_display_(/*39.10*/for(p <-products) yield /*39.27*/ {_display_(Seq[Any](format.raw/*39.29*/("""
-          """),_display_(/*40.12*/if(p.getId == 10)/*40.29*/ {_display_(Seq[Any](format.raw/*40.31*/("""
-        """),format.raw/*41.9*/("""<h4>"""),_display_(/*41.14*/p/*41.15*/.getName),format.raw/*41.23*/("""</h4>
+        """),_display_(/*43.10*/for(p <-products) yield /*43.27*/ {_display_(Seq[Any](format.raw/*43.29*/("""
+          """),_display_(/*44.12*/if(p.getId == 10)/*44.29*/ {_display_(Seq[Any](format.raw/*44.31*/("""
+        """),format.raw/*45.9*/("""<h4>"""),_display_(/*45.14*/p/*45.15*/.getName),format.raw/*45.23*/("""</h4>
         <ul>	
-          <li>"""),_display_(/*43.16*/p/*43.17*/.getDescription),format.raw/*43.32*/("""</li><br>
-          <li>"""),_display_(/*44.16*/p/*44.17*/.getStock),format.raw/*44.26*/("""</li><br>
-          <li>euro; """),_display_(/*45.22*/("%.2f".format(p.getPrice))),format.raw/*45.49*/("""</li><br>
+          <li>"""),_display_(/*47.16*/p/*47.17*/.getDescription),format.raw/*47.32*/("""</li><br>
+          <li>"""),_display_(/*48.16*/p/*48.17*/.getStock),format.raw/*48.26*/("""</li><br>
+          <li>euro; """),_display_(/*49.22*/("%.2f".format(p.getPrice))),format.raw/*49.49*/("""</li><br>
           <td>
-            <a href=""""),_display_(/*47.23*/routes/*47.29*/.HomeController.deleteProduct(p.getId)),format.raw/*47.67*/("""" class="button-xs btn-danger">
+							<a href=""""),_display_(/*51.18*/routes/*51.24*/.HomeController.updateProduct(p.getId)),format.raw/*51.62*/("""" class="button-xs btn-danger">
+								<span class="glyphicon glyphicon-pencil"></span>
+						</td>
+          <td>
+            <a href=""""),_display_(/*55.23*/routes/*55.29*/.HomeController.deleteProduct(p.getId)),format.raw/*55.67*/("""" class="button-xs btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
             </a>
           </td>
           
-            """)))}),format.raw/*52.14*/("""
-        """),format.raw/*53.9*/("""</ul>
-          """)))}),format.raw/*54.12*/("""
-      """),format.raw/*55.7*/("""</div>
+            """)))}),format.raw/*60.14*/("""
+        """),format.raw/*61.9*/("""</ul>
+          """)))}),format.raw/*62.12*/("""
+      """),format.raw/*63.7*/("""</div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
         <div class="panel-heading">Samsung 49 Inch Full HD Smart TV</div>
         <div class="panel-body"><img src="/assets/images/SamsungTV-img3.jpg" alt="49' Samsung TV" class="productImg" style="height: 13em;"></div>
-        """),_display_(/*61.10*/for(p <-products) yield /*61.27*/ {_display_(Seq[Any](format.raw/*61.29*/("""
-          """),_display_(/*62.12*/if(p.getId == 6)/*62.28*/ {_display_(Seq[Any](format.raw/*62.30*/("""
-        """),format.raw/*63.9*/("""<h4>"""),_display_(/*63.14*/p/*63.15*/.getName),format.raw/*63.23*/("""</h4>
+        """),_display_(/*69.10*/for(p <-products) yield /*69.27*/ {_display_(Seq[Any](format.raw/*69.29*/("""
+          """),_display_(/*70.12*/if(p.getId == 6)/*70.28*/ {_display_(Seq[Any](format.raw/*70.30*/("""
+        """),format.raw/*71.9*/("""<h4>"""),_display_(/*71.14*/p/*71.15*/.getName),format.raw/*71.23*/("""</h4>
         <ul>	
-          <li>"""),_display_(/*65.16*/p/*65.17*/.getDescription),format.raw/*65.32*/("""</li><br>
-          <li>"""),_display_(/*66.16*/p/*66.17*/.getStock),format.raw/*66.26*/("""</li><br>
-          <li>euro; """),_display_(/*67.22*/("%.2f".format(p.getPrice))),format.raw/*67.49*/("""</li><br>
+          <li>"""),_display_(/*73.16*/p/*73.17*/.getDescription),format.raw/*73.32*/("""</li><br>
+          <li>"""),_display_(/*74.16*/p/*74.17*/.getStock),format.raw/*74.26*/("""</li><br>
+          <li>euro; """),_display_(/*75.22*/("%.2f".format(p.getPrice))),format.raw/*75.49*/("""</li><br>
           <td>
-            <a href=""""),_display_(/*69.23*/routes/*69.29*/.HomeController.deleteProduct(p.getId)),format.raw/*69.67*/("""" class="button-xs btn-danger">
+							<a href=""""),_display_(/*77.18*/routes/*77.24*/.HomeController.updateProduct(p.getId)),format.raw/*77.62*/("""" class="button-xs btn-danger">
+								<span class="glyphicon glyphicon-pencil"></span>
+						</td>
+          <td>
+            <a href=""""),_display_(/*81.23*/routes/*81.29*/.HomeController.deleteProduct(p.getId)),format.raw/*81.67*/("""" class="button-xs btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
             </a>
           </td>
-        """)))}),format.raw/*73.10*/("""
-            """)))}),format.raw/*74.14*/("""
-        """),format.raw/*75.9*/("""</ul>
-          """)))}),format.raw/*76.12*/("""
-      """),format.raw/*77.7*/("""</div>
+        """)))}),format.raw/*85.10*/("""
+            """)))}),format.raw/*86.14*/("""
+        """),format.raw/*87.9*/("""</ul>
+          """)))}),format.raw/*88.12*/("""
+      """),format.raw/*89.7*/("""</div>
     </div>
   </div>
 </div>
@@ -134,11 +146,11 @@ Seq[Any](format.raw/*1.59*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 23 14:01:52 IST 2018
+                  DATE: Mon Apr 23 14:49:16 IST 2018
                   SOURCE: /home/wdd/webapps/finalFinalroject/app/views/tv.scala.html
-                  HASH: 48106c5e3552a47687a3dd68bc35c723b280e8b3
-                  MATRIX: 977->1|1129->58|1157->60|1260->138|1287->157|1326->159|1361->167|1727->506|1760->523|1800->525|1839->537|1864->553|1904->555|1940->564|1972->569|1982->570|2011->578|2073->613|2083->614|2119->629|2171->654|2181->655|2211->664|2269->695|2317->722|2391->769|2406->775|2465->813|2647->964|2683->973|2731->990|2765->997|3099->1304|3132->1321|3172->1323|3211->1335|3237->1352|3277->1354|3313->1363|3345->1368|3355->1369|3384->1377|3446->1412|3456->1413|3492->1428|3544->1453|3554->1454|3584->1463|3642->1494|3690->1521|3764->1568|3779->1574|3838->1612|4020->1763|4056->1772|4104->1789|4138->1796|4480->2111|4513->2128|4553->2130|4592->2142|4617->2158|4657->2160|4693->2169|4725->2174|4735->2175|4764->2183|4826->2218|4836->2219|4872->2234|4924->2259|4934->2260|4964->2269|5022->2300|5070->2327|5144->2374|5159->2380|5218->2418|5385->2554|5430->2568|5466->2577|5514->2594|5548->2601
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|42->10|49->17|49->17|49->17|50->18|50->18|50->18|51->19|51->19|51->19|51->19|53->21|53->21|53->21|54->22|54->22|54->22|55->23|55->23|57->25|57->25|57->25|62->30|63->31|64->32|65->33|71->39|71->39|71->39|72->40|72->40|72->40|73->41|73->41|73->41|73->41|75->43|75->43|75->43|76->44|76->44|76->44|77->45|77->45|79->47|79->47|79->47|84->52|85->53|86->54|87->55|93->61|93->61|93->61|94->62|94->62|94->62|95->63|95->63|95->63|95->63|97->65|97->65|97->65|98->66|98->66|98->66|99->67|99->67|101->69|101->69|101->69|105->73|106->74|107->75|108->76|109->77
+                  HASH: 3e4652b4aef37bc901b4662c1fb819eaf6e263e4
+                  MATRIX: 977->1|1129->58|1157->60|1260->138|1287->157|1326->159|1361->167|1727->506|1760->523|1800->525|1839->537|1864->553|1904->555|1940->564|1972->569|1982->570|2011->578|2073->613|2083->614|2119->629|2171->654|2181->655|2211->664|2269->695|2317->722|2386->764|2401->770|2460->808|2625->946|2640->952|2699->990|2881->1141|2917->1150|2965->1167|2999->1174|3333->1481|3366->1498|3406->1500|3445->1512|3471->1529|3511->1531|3547->1540|3579->1545|3589->1546|3618->1554|3680->1589|3690->1590|3726->1605|3778->1630|3788->1631|3818->1640|3876->1671|3924->1698|3993->1740|4008->1746|4067->1784|4232->1922|4247->1928|4306->1966|4488->2117|4524->2126|4572->2143|4606->2150|4948->2465|4981->2482|5021->2484|5060->2496|5085->2512|5125->2514|5161->2523|5193->2528|5203->2529|5232->2537|5294->2572|5304->2573|5340->2588|5392->2613|5402->2614|5432->2623|5490->2654|5538->2681|5607->2723|5622->2729|5681->2767|5846->2905|5861->2911|5920->2949|6087->3085|6132->3099|6168->3108|6216->3125|6250->3132
+                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|42->10|49->17|49->17|49->17|50->18|50->18|50->18|51->19|51->19|51->19|51->19|53->21|53->21|53->21|54->22|54->22|54->22|55->23|55->23|57->25|57->25|57->25|61->29|61->29|61->29|66->34|67->35|68->36|69->37|75->43|75->43|75->43|76->44|76->44|76->44|77->45|77->45|77->45|77->45|79->47|79->47|79->47|80->48|80->48|80->48|81->49|81->49|83->51|83->51|83->51|87->55|87->55|87->55|92->60|93->61|94->62|95->63|101->69|101->69|101->69|102->70|102->70|102->70|103->71|103->71|103->71|103->71|105->73|105->73|105->73|106->74|106->74|106->74|107->75|107->75|109->77|109->77|109->77|113->81|113->81|113->81|117->85|118->86|119->87|120->88|121->89
                   -- GENERATED --
               */
           

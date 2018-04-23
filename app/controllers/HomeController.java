@@ -124,7 +124,14 @@ public class HomeController extends Controller {
         }else {
             Product newProduct = newProductForm.get();
 
-            newProduct.save();
+            if (newProduct.getId() == null) {
+                newProduct.save();
+            } 
+            else if (newProduct.getId() != null ) {
+                newProduct.update();
+            }
+
+            
             
             flash("success", "Product "+ newProduct.getName() + "was added");
 
@@ -149,5 +156,24 @@ public class HomeController extends Controller {
     
         
     }
+
+    @Security.Authenticated(Secured.class)
+    @With(AuthAdmin.class)
+    @Transactional
+    public Result updateProduct(Long id) {
+        Product p;
+        Form<Product> productForm;
+
+        try {
+            p=Product.find.byId(id);
+
+            productForm = formFactory.form(Product.class).fill(p);
+
+        } catch (Exception ex) {
+            return badRequest("error");
+        }
+        return ok(views.html.addProduct.render(productForm, User.getUserById(session().get("email"))));
+    }
+
 
 }

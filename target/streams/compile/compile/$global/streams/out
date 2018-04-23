@@ -1,4 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/wdd/webapps/finalFinalroject/app/views/login.scala.html:13:32: method globalError in class Form is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                    @loginForm.globalError.message[0m
-[0m[[0m[33mwarn[0m] [0m[0m                               ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/wdd/webapps/finalFinalroject/app/controllers/HomeController.java:161:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class with[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class controllers.HomeController[0m
+[0m[[0m[31merror[0m] [0m[0m    @with(AuthAdmin.class)[0m

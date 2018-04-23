@@ -54,59 +54,71 @@ Seq[Any](format.raw/*1.59*/("""
             <li>"""),_display_(/*22.18*/p/*22.19*/.getStock),format.raw/*22.28*/("""</li><br>
             <li>euro; """),_display_(/*23.24*/("%.2f".format(p.getPrice))),format.raw/*23.51*/("""</li><br>
             <td>
-              <a href=""""),_display_(/*25.25*/routes/*25.31*/.HomeController.deleteProduct(p.getId)),format.raw/*25.69*/("""" class="button-xs btn-danger">
+                <a href=""""),_display_(/*25.27*/routes/*25.33*/.HomeController.updateProduct(p.getId)),format.raw/*25.71*/("""" class="button-xs btn-danger">
+                  <span class="glyphicon glyphicon-pencil"></span>
+              </td>
+            <td>
+              <a href=""""),_display_(/*29.25*/routes/*29.31*/.HomeController.deleteProduct(p.getId)),format.raw/*29.69*/("""" class="button-xs btn-danger">
                 <span class="glyphicon glyphicon-trash"></span>
               </a>
             </td>
-              """)))}),format.raw/*29.16*/("""   
-          """),format.raw/*30.11*/("""</ul>
-      """)))}),format.raw/*31.8*/("""   
-      """),format.raw/*32.7*/("""</div>
+              """)))}),format.raw/*33.16*/("""   
+          """),format.raw/*34.11*/("""</ul>
+      """)))}),format.raw/*35.8*/("""   
+      """),format.raw/*36.7*/("""</div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-danger">
         <div class="panel-heading">iPhone 7</div>
         <div class="panel-body"><img src="/assets/images/iphone7.jpg" alt="32' LG TV" class="productImg" style="width:128px;height:128px;" style="height: 13em"></div>
-        """),_display_(/*38.10*/for(p <-products) yield /*38.27*/ {_display_(Seq[Any](format.raw/*38.29*/("""
-          """),_display_(/*39.12*/if(p.getId == 8)/*39.28*/ {_display_(Seq[Any](format.raw/*39.30*/("""
-        """),format.raw/*40.9*/("""<h4>"""),_display_(/*40.14*/p/*40.15*/.getName),format.raw/*40.23*/("""</h4>
+        """),_display_(/*42.10*/for(p <-products) yield /*42.27*/ {_display_(Seq[Any](format.raw/*42.29*/("""
+          """),_display_(/*43.12*/if(p.getId == 8)/*43.28*/ {_display_(Seq[Any](format.raw/*43.30*/("""
+        """),format.raw/*44.9*/("""<h4>"""),_display_(/*44.14*/p/*44.15*/.getName),format.raw/*44.23*/("""</h4>
         <ul>	
-          <li>"""),_display_(/*42.16*/p/*42.17*/.getDescription),format.raw/*42.32*/("""  """),format.raw/*42.34*/("""</li><br>
-          <li>"""),_display_(/*43.16*/p/*43.17*/.getStock),format.raw/*43.26*/("""</li><br>
-          <li>euro; """),_display_(/*44.22*/("%.2f".format(p.getPrice))),format.raw/*44.49*/("""</li><br>
+          <li>"""),_display_(/*46.16*/p/*46.17*/.getDescription),format.raw/*46.32*/("""  """),format.raw/*46.34*/("""</li><br>
+          <li>"""),_display_(/*47.16*/p/*47.17*/.getStock),format.raw/*47.26*/("""</li><br>
+          <li>euro; """),_display_(/*48.22*/("%.2f".format(p.getPrice))),format.raw/*48.49*/("""</li><br>
           <td>
-            <a href=""""),_display_(/*46.23*/routes/*46.29*/.HomeController.deleteProduct(p.getId)),format.raw/*46.67*/("""" class="button-xs btn-danger">
+							<a href=""""),_display_(/*50.18*/routes/*50.24*/.HomeController.updateProduct(p.getId)),format.raw/*50.62*/("""" class="button-xs btn-danger">
+								<span class="glyphicon glyphicon-pencil"></span>
+						</td>
+          <td>
+            <a href=""""),_display_(/*54.23*/routes/*54.29*/.HomeController.deleteProduct(p.getId)),format.raw/*54.67*/("""" class="button-xs btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
             </a>
           </td>
           
-            """)))}),format.raw/*51.14*/("""
-        """),format.raw/*52.9*/("""</ul>
-      """)))}),format.raw/*53.8*/("""
-      """),format.raw/*54.7*/("""</div>
+            """)))}),format.raw/*59.14*/("""
+        """),format.raw/*60.9*/("""</ul>
+      """)))}),format.raw/*61.8*/("""
+      """),format.raw/*62.7*/("""</div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
         <div class="panel-heading">iPhone 6</div>
         <div class="panel-body"><img src="/assets/images/iphone6.jpg" alt="32' LG TV" class="productImg" style="width:128px;height:128px;" style="height: 13em"></div>
-        """),_display_(/*60.10*/for(p <-products) yield /*60.27*/ {_display_(Seq[Any](format.raw/*60.29*/("""
-          """),_display_(/*61.12*/if(p.getId == 5)/*61.28*/ {_display_(Seq[Any](format.raw/*61.30*/("""
-        """),format.raw/*62.9*/("""<h4>"""),_display_(/*62.14*/p/*62.15*/.getName),format.raw/*62.23*/("""</h4>
+        """),_display_(/*68.10*/for(p <-products) yield /*68.27*/ {_display_(Seq[Any](format.raw/*68.29*/("""
+          """),_display_(/*69.12*/if(p.getId == 5)/*69.28*/ {_display_(Seq[Any](format.raw/*69.30*/("""
+        """),format.raw/*70.9*/("""<h4>"""),_display_(/*70.14*/p/*70.15*/.getName),format.raw/*70.23*/("""</h4>
         <ul>	
-          <li>"""),_display_(/*64.16*/p/*64.17*/.getDescription),format.raw/*64.32*/("""</li><br>
+          <li>"""),_display_(/*72.16*/p/*72.17*/.getDescription),format.raw/*72.32*/("""</li><br>
         
-          <li>"""),_display_(/*66.16*/p/*66.17*/.getStock),format.raw/*66.26*/("""</li><br>
-          <li>euro; """),_display_(/*67.22*/("%.2f".format(p.getPrice))),format.raw/*67.49*/("""</li><br>
+          <li>"""),_display_(/*74.16*/p/*74.17*/.getStock),format.raw/*74.26*/("""</li><br>
+          <li>euro; """),_display_(/*75.22*/("%.2f".format(p.getPrice))),format.raw/*75.49*/("""</li><br>
           <td>
-            <a href=""""),_display_(/*69.23*/routes/*69.29*/.HomeController.deleteProduct(p.getId)),format.raw/*69.67*/("""" class="button-xs btn-danger">
+							<a href=""""),_display_(/*77.18*/routes/*77.24*/.HomeController.updateProduct(p.getId)),format.raw/*77.62*/("""" class="button-xs btn-danger">
+								<span class="glyphicon glyphicon-pencil"></span>
+						</td>
+          <td>
+            <a href=""""),_display_(/*81.23*/routes/*81.29*/.HomeController.deleteProduct(p.getId)),format.raw/*81.67*/("""" class="button-xs btn-danger">
               <span class="glyphicon glyphicon-trash"></span>
             </a>
           </td>
-        """)))}),format.raw/*73.10*/("""
-            """)))}),format.raw/*74.14*/("""
-        """),format.raw/*75.9*/("""</ul>
-      """)))}),format.raw/*76.8*/("""
-      """),format.raw/*77.7*/("""</div>
+        """)))}),format.raw/*85.10*/("""
+            """)))}),format.raw/*86.14*/("""
+        """),format.raw/*87.9*/("""</ul>
+      """)))}),format.raw/*88.8*/("""
+      """),format.raw/*89.7*/("""</div>
     </div>
   </div>
 </div>
@@ -134,11 +146,11 @@ Seq[Any](format.raw/*1.59*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon Apr 23 14:01:52 IST 2018
+                  DATE: Mon Apr 23 14:49:16 IST 2018
                   SOURCE: /home/wdd/webapps/finalFinalroject/app/views/Phones.scala.html
-                  HASH: 87c16747daf11b1c7fb50a88fed46a217d0ddd6d
-                  MATRIX: 981->1|1133->58|1161->60|1262->136|1289->155|1328->157|1363->165|1737->512|1770->529|1810->531|1849->543|1874->559|1914->561|1953->572|1985->577|1995->578|2024->586|2053->587|2119->626|2129->627|2165->642|2219->669|2229->670|2259->679|2319->712|2367->739|2445->790|2460->796|2519->834|2698->982|2740->996|2783->1009|2820->1019|3158->1330|3191->1347|3231->1349|3270->1361|3295->1377|3335->1379|3371->1388|3403->1393|3413->1394|3442->1402|3504->1437|3514->1438|3550->1453|3580->1455|3632->1480|3642->1481|3672->1490|3730->1521|3778->1548|3852->1595|3867->1601|3926->1639|4108->1790|4144->1799|4187->1812|4221->1819|4560->2131|4593->2148|4633->2150|4672->2162|4697->2178|4737->2180|4773->2189|4805->2194|4815->2195|4844->2203|4906->2238|4916->2239|4952->2254|5013->2288|5023->2289|5053->2298|5111->2329|5159->2356|5233->2403|5248->2409|5307->2447|5474->2583|5519->2597|5555->2606|5598->2619|5632->2626
-                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|42->10|49->17|49->17|49->17|50->18|50->18|50->18|51->19|51->19|51->19|51->19|51->19|53->21|53->21|53->21|54->22|54->22|54->22|55->23|55->23|57->25|57->25|57->25|61->29|62->30|63->31|64->32|70->38|70->38|70->38|71->39|71->39|71->39|72->40|72->40|72->40|72->40|74->42|74->42|74->42|74->42|75->43|75->43|75->43|76->44|76->44|78->46|78->46|78->46|83->51|84->52|85->53|86->54|92->60|92->60|92->60|93->61|93->61|93->61|94->62|94->62|94->62|94->62|96->64|96->64|96->64|98->66|98->66|98->66|99->67|99->67|101->69|101->69|101->69|105->73|106->74|107->75|108->76|109->77
+                  HASH: 2a93eeb62094eb594e0e991c909418444bb7d075
+                  MATRIX: 981->1|1133->58|1161->60|1262->136|1289->155|1328->157|1363->165|1737->512|1770->529|1810->531|1849->543|1874->559|1914->561|1953->572|1985->577|1995->578|2024->586|2053->587|2119->626|2129->627|2165->642|2219->669|2229->670|2259->679|2319->712|2367->739|2447->792|2462->798|2521->836|2708->996|2723->1002|2782->1040|2961->1188|3003->1202|3046->1215|3083->1225|3421->1536|3454->1553|3494->1555|3533->1567|3558->1583|3598->1585|3634->1594|3666->1599|3676->1600|3705->1608|3767->1643|3777->1644|3813->1659|3843->1661|3895->1686|3905->1687|3935->1696|3993->1727|4041->1754|4110->1796|4125->1802|4184->1840|4349->1978|4364->1984|4423->2022|4605->2173|4641->2182|4684->2195|4718->2202|5057->2514|5090->2531|5130->2533|5169->2545|5194->2561|5234->2563|5270->2572|5302->2577|5312->2578|5341->2586|5403->2621|5413->2622|5449->2637|5510->2671|5520->2672|5550->2681|5608->2712|5656->2739|5725->2781|5740->2787|5799->2825|5964->2963|5979->2969|6038->3007|6205->3143|6250->3157|6286->3166|6329->3179|6363->3186
+                  LINES: 28->1|33->1|35->3|40->8|40->8|40->8|42->10|49->17|49->17|49->17|50->18|50->18|50->18|51->19|51->19|51->19|51->19|51->19|53->21|53->21|53->21|54->22|54->22|54->22|55->23|55->23|57->25|57->25|57->25|61->29|61->29|61->29|65->33|66->34|67->35|68->36|74->42|74->42|74->42|75->43|75->43|75->43|76->44|76->44|76->44|76->44|78->46|78->46|78->46|78->46|79->47|79->47|79->47|80->48|80->48|82->50|82->50|82->50|86->54|86->54|86->54|91->59|92->60|93->61|94->62|100->68|100->68|100->68|101->69|101->69|101->69|102->70|102->70|102->70|102->70|104->72|104->72|104->72|106->74|106->74|106->74|107->75|107->75|109->77|109->77|109->77|113->81|113->81|113->81|117->85|118->86|119->87|120->88|121->89
                   -- GENERATED --
               */
           

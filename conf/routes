@@ -20,6 +20,7 @@ POST    /addProductSubmit                controllers.HomeController.addProductSu
 POST    /addQuestionSubmit               controllers.HomeController.addQuestionSubmit
 #Delete Product
 GET     /delProduct/:id                  controllers.HomeController.deleteProduct(id: Long)
+GET     /updateProduct/:id               controllers.HomeController.updateProduct(id:Long)
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
